@@ -58,6 +58,7 @@ a{
 .header-inner{
     position: relative;
     z-index:3;
+    height: inherit;
 }
 
 .logo{
@@ -109,12 +110,15 @@ a{
     padding-left: 2px;
     padding-bottom: 5px;
     border-bottom: 3px solid transparent;
-    border-radius:10%;
     transition: all .1s;
 }
 
 .header-nav-item:hover{
     border-bottom: 3px solid white;
+}
+
+.nav-item-active{
+    border-bottom:  3px solid orange;
 }
 
 .header-logo-img{
@@ -188,6 +192,47 @@ a{
 
 .header-burger{
     display: none;
+}
+
+.register-wrapper{
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.register{
+    margin: auto;
+    background-color: rgba(10,0,10,.9);
+    width: 300px;
+    height:  500px;
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+
+    border-radius: 5px;
+}
+
+.register b {
+    font-size: 24px;
+    text-align: center;
+}
+
+.input{
+    margin-top: 10px;
+    background-color: rgba(0,20, 30, 0.5);
+    padding: 5px;
+    color:  white;
+    border: 1px solid;
+}
+
+.btn{
+    padding: 10px;
+    width: 150px;
+    background-color: #19b2e6;
+    border: none;
+    border-radius: 3px;
+
 }
 
 @media (max-width:767px){
